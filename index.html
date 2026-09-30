@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHRUVA — Real-Time Train-Arrival Intelligence</title>
+    <meta name="description" content="Confidence-scored arrival intelligence system for Indian Railways (SIH26028). One fixed point you can trust in a journey full of things that shift." />
+    <meta property="og:title" content="DHRUVA — Real-Time Train-Arrival Intelligence" />
+    <meta property="og:description" content="Confidence-scored arrival intelligence system for Indian Railways (SIH26028). One fixed point you can trust in a journey full of things that shift." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('dhruva_theme');
+          var theme = saved === 'day' || saved === 'night' ? saved : 'night';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[var(--bg)] text-[var(--text)] selection:bg-[var(--pole-star-fill)] selection:text-[var(--bg)] overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="night"] {
+  --bg: #05070D;
+  --surface-1: #0E1628;
+  --surface-2: #141F36;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #EDF1FA;
+  --text-muted: #98A6C4;
+  --text-faint: #5C6A8C;
+  --pole-star-fg: #F2B632;
+  --pole-star-fill: #F2B632;
+  --ember: #FF9F58;
+  --on-time-fg: #3ED07F;
+  --on-time-fill: #3DDC84;
+  --caution-fg: #F0A93A;
+  --caution-fill: #E0912A;
+  --alert-fg: #FF6B57;
+  --alert-fill: #D24A3C;
+
+  --navy-900: #0B1E3F;
+  --navy-800: #14294F;
+  --ink: #05070D;
+  --paper: #FAF7F0;
+  --ink-on-paper: #14192B;
+}
+
+[data-theme="day"] {
+  --bg: #FAF7F0;
+  --surface-1: #FFFFFF;
+  --surface-2: #F1ECDF;
+  --border: #E4DCC8;
+  --border-strong: #CFC3A7;
+  --text: #14192B;
+  --text-muted: #5B6478;
+  --text-faint: #8991A6;
+  --pole-star-fg: #A6690E;
+  --pole-star-fill: #F2B632;
+  --ember: #D96B27;
+  --on-time-fg: #1E8E52;
+  --on-time-fill: #3DDC84;
+  --caution-fg: #B5680C;
+  --caution-fill: #E0912A;
+  --alert-fg: #B23327;
+  --alert-fill: #D24A3C;
+
+  --navy-900: #F1ECDF;
+  --navy-800: #E4DCC8;
+  --ink: #FAF7F0;
+  --paper: #FAF7F0;
+  --ink-on-paper: #14192B;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Indic & Latin Typography Classes */
+.font-editorial {
+  font-family: 'Fraunces', Georgia, serif;
+  font-optical-sizing: auto;
+}
+
+.font-editorial-indic {
+  font-family: 'Noto Serif Devanagari', 'Fraunces', Georgia, serif;
+  line-height: 1.35;
+}
+
+.font-sans-indic {
+  font-family: 'Noto Sans Devanagari', 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.55;
+}
+
+.font-tabular {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle noise grain overlay */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.028'/%3E%3C/svg%3E");
+}
+
+/* Focus visibility using warm gold */
+:focus-visible {
+  outline: 2px solid var(--pole-star-fg) !important;
+  outline-offset: 3px !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pole-star-fill);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "DHRUVA — Real-Time Train-Arrival Intelligence",
+  "description": "Confidence-scored arrival intelligence system for Indian Railways (SIH26028). One fixed point you can trust in a journey full of things that shift.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
