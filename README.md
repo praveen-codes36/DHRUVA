@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,6,20&height=200&section=header&text=DHRUVA&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Real-Time%20Train-Arrival%20Intelligence&descAlignY=60&descSize=20" width="100%" alt="DHRUVA"/>
 
-<img src="./assets/dhruva-hero.svg" width="100%" alt="Animated DHRUVA concept: a train approaching a station with a confidence band around its ETA"/>
+<img src="./dhruva-hero.svg" width="100%" alt="Animated DHRUVA concept: a train approaching a station with a confidence band around its ETA"/>
 
 ### *One fixed point you can trust in a journey full of things that shift.*
 
